@@ -1,9 +1,10 @@
 import React from 'react';
 
-const Display = () => {
+const Display = (props) => {
     return (
-        <div className='display'>
-            D
+        <div className='display border container'>
+            <div className='border'>{props.view}</div>
+            <div className='border'>{props.result}</div>
         </div>
     );
 };

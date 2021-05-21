@@ -19,16 +19,61 @@ code {
   height: 550px;
   margin: 60px auto;
   color: #FFFFFF;
-  padding: 15px;
+  /*padding: 15px;*/
   display: flex;
   flex-direction: column;
-
-  background-image: linear-gradient(to left bottom, #51555f, #403f46, #2e2b2f, #1b191a, #000000);
+  background-color: #33272A;
+  /*background-image: linear-gradient(to left bottom, #51555f, #403f46, #2e2b2f, #1b191a, #000000);*/
 }
 
 .header,
 .display,
+.keypad,
+.button-wrapper {
+  /*border: 1px solid #FFF;*/
+
+}
+
+.header {
+  /*flex: 0 1 0;*/
+
+
+}
+.display {
+  flex: 1 1 0;
+
+
+}
+
 .keypad {
-  border: 1px solid #FFF;
+  flex: 2 1 0;
+
+}
+
+.button-wrapper  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button   {
+  /*border: 1px solid #FFF;*/
+  /*align-items: center;
+  background-color: #51555f?;
+  box-shadow:
+          12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+          -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  color: #FFFFFF;*/
+  /*display: flex;*/
+  /*height: 50px;*/
+  /*justify-content: center;*/
+  /*margin-right: 4rem;*/
+  /*width: 50px;*/
+  cursor: pointer;
+
+}
+
+.button:hover {
 
 }
