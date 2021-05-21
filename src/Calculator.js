@@ -1,51 +1,50 @@
 import React from 'react';
 import { evaluate } from 'mathjs'
-// import Symbol from './data/symbol'
 import Display from "./Display";
 import Keypad from "./Keypad";
 import Header from "./Header";
 import Button from "./Button";
 
-// let symbols = ['C', 0, '*', '/', 1, 2, 3, '+', 4, 5, 6, '-',7, 8, 9, '=']
 let symbol =  [
     {d:"C",
-        type:'operator'},
+        type:'operator', label: 'clear'},
      {
         d:"0",
-        type: 'digit'
+        type:'digit', label: 'digit-0'
         },
     {d:"*",
-        type:'operator'},
+        type:'operator', label: 'op-mul'},
     {d:"/",
-        type:'operator'},
+        type:'operator', label: 'op-div'},
     {
         d:"1",
-        type: 'digit'
+        type:'digit', label: 'digit-1'
         },
      {d:"2",
-    type: 'digit'},
+    type:'digit', label: 'digit-2'},
      {d:"3",
-    type: 'digit'},
+    type:'digit', label: 'digit-3'},
 
     {d:"+",
-        type:'operator'},
+        type:'operator', label: 'op-add'},
      {d:"4",
-    type: 'digit'},
+    type:'digit', label: 'digit-4'},
      {d:"5",
-    type: 'digit'},
+    type:'digit', label: 'digit-5'},
      {d:"6",
-    type: 'digit'},
+    type:'digit', label: 'digit-6'},
     {d:"-",
-        type:'operator'},
+        type:'operator', label: 'op-sub'},
      {d:"7",
-    type: 'digit'},
+    type:'digit', label: 'digit-7'},
      {d:"8",
-    type: 'digit'},
+    type:'digit', label: 'digit-8'},
      {d:"9",
-    type: 'digit'},
+    type:'digit', label: 'digit-9'},
 
      {d:"=",
-    type: 'digit'},
+    type:'equals',
+         label: 'eq'},
 
 
 
@@ -93,6 +92,7 @@ const Calculator = () => {
                             value={value.d}
                             key={index}
                             type={value.type}
+                            label={value.label}
                             click={handleClick}
                             lastSymbol={lastSymbol}
                         />

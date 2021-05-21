@@ -2,9 +2,9 @@ import React from 'react';
 
 const Display = (props) => {
     return (
-        <div className='display border container'>
-            <div className='border'>{props.view}</div>
-            <div className='border'>{props.result}</div>
+        <div className='output container'>
+            <h3 className='calc'>{props.view}</h3>
+            <h1 className='result'>{props.result}</h1>
         </div>
     );
 };

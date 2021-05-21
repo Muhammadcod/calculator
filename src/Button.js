@@ -1,8 +1,6 @@
 import React from 'react';
 
-
 const Button = (props) => {
-
 
     const emptyCheck =    props.lastSymbol === '' ? props.type === 'operator' && props.value !== '-' : false
 
@@ -12,7 +10,7 @@ const Button = (props) => {
 
     return (
         <button
-            className={`p-3 border  button ${props.tag}`}
+            className={`p-3 button ${props.tag} ${props.label}`}
             data-value={props.value}
             onClick={handleClick}
             disabled= {emptyCheck}
